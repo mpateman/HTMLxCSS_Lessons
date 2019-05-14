@@ -6,15 +6,89 @@
 
 	<style type="text/css">
 
+		.coverup{
+		 left: 0px;
+		 top: 0px;
+		 width: 1000px;
+		 height: 0px;
+	     position:absolute;
+		 animation: coverup_move 12s linear;
+		 z-index: 800;
+		}
+
+		@keyframes coverup_move{
+		  0%{
+		    height: 555px;
+		  }
+		  100%{
+		    height: 0px;
+		  }
+		}
+
 		.fade{
-	     text-align: center;
+		 text-align: center;
+	     transition: 12s ease-out 7s;
+		 opacity: 1;
+	     z-index: 100;
+	     margin-top: 20px;
 		}
-		
+
 		.fade:hover {
-	     transition: 1.1s ease-in-out;
-		 opacity: 0;
 		 cursor: url('glove.gif') 15 10, auto;
+	     transition: 1.1s ease-out;
+		 opacity: 0;
+		 z-index: 100;
 		}
+
+		.portal{
+		 position:absolute;
+		 left: -200px;
+		 top: 200px;
+		 z-index: 1000;
+		 opacity: 0;
+		 animation: portal_fades 4s ease-in-out 2s;
+		}
+
+		@keyframes portal_fades{
+		  0%{
+		    opacity: 0;
+		  }
+		  20%{
+		    opacity: 100;
+		  }
+		  80%{
+		    opacity: 100;
+		  }
+		  100%{
+		    opacity: 0;
+		  }
+		}
+
+		.thanos{
+		 margin-top: 50px;
+		 margin-left: 200px;
+		 transform: scale(0.5);
+		 z-index: 1000;
+		 animation: thanos_fades 7s ease-in 0s;
+		}
+
+		@keyframes thanos_fades{
+		  0%{
+		    opacity: 0;
+		    margin-left: -1000px;
+		  }
+		  30%{
+		    opacity: 0;
+		    margin-left: -1000px;
+		  }
+		  33%{
+		    opacity: 0;
+		    margin-left: 200px;
+		  }
+		  100%{
+		    opacity: 1;
+		    margin-left: 200px;
+		  }
 
 	</style>
 
@@ -22,21 +96,16 @@
 
 <body>
 
+    <div class="coverup"><!-- a transparent square to cover the words --></div>
 
 	<div class="fade"><p><b>Hello!</b> This is an HTML Template.</p></div>
-
-	<br><br>
-
 	<div class="fade"><p>My name is : Mitch</p></div>
-
-	<br>
-
 	<div class="fade"><p>I am a : Web Developer</p></div>
-
-	<br>
-
 	<div class="fade"><p>I am : 28 Years Old</p></div>
-
+    
+    <img class="portal" src="thanos_portal.png"/>
+    <br>
+    <img class="thanos" src="thanos.png"/>
 
 </body>
 </html>
