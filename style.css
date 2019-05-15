@@ -26,11 +26,11 @@
 		.fade{
 	     color: white;
 	     text-shadow: #CCC 1px 0 1px;
- 		 line-height: 24px;
+ 		 line-height: 20px;
  		 text-align: center;
 		 z-index: 500;
 	     font-size: 15px;
-	     transition: 16s ease-in 0s;
+	     transition: 20s ease-in 0s;
 		 opacity: 1;     
 		}
 
@@ -43,8 +43,8 @@
 
 		.thanos_quote{
 		 font-family: "Arial";
-		 line-height: 24px;
-		 font-size: 27px;
+		 line-height: 20px;
+		 font-size: 24px;
 		 color: white;
 		 text-shadow: #FC0 1px 0 10px;
 		 position:absolute;
