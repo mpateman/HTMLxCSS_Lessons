@@ -1,10 +1,12 @@
 
 		.text{
-		 color: black;     
+		 color: black; 
+		 font-size: 44px;    
 		}
 
 		.text:hover{
 		 color: blue;
+		 font-size: 44px;    
 		}
 
 		
