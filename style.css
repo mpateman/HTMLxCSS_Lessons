@@ -34,7 +34,7 @@
 		 opacity: 1;     
 		}
 
-		.fade:hover {
+		.fade:hover, .fade:active {
 		 cursor: url('glove.gif') 15 10, auto;
 	     transition: 1.1s ease-out 0s;
 		 opacity: 0;
